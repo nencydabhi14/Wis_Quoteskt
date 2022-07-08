@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".Category_Screen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_blocks" />
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:visibility="gone"
+        android:background="@color/darkblue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/heding"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/back_category"
+            android:layout_width="40dp"
+            android:background="@drawable/ripaleffect"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_category_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="3dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_rcv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heding"
+        android:layout_marginBottom="15dp" />
+
+
+</RelativeLayout>

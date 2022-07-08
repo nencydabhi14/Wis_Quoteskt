@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/darkblue">
+
+        <RelativeLayout
+            android:id="@+id/all_change_img_re"
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+            <ImageView
+                android:id="@+id/img_change"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:background="@color/lovender"/>
+
+            <ImageView
+                android:id="@+id/all_quote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qicon" />
+
+            <ImageView
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/start"/>
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="60dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/over"/>
+
+            <ImageView
+                android:id="@+id/all_insta_category_like"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/instapost"
+                android:layout_centerInParent="true"/>
+
+
+
+            <TextView
+                android:id="@+id/all_quotes_txt"
+                android:textSize="21dp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/all_liked_post"
+                    android:layout_width="25dp"
+                    android:onClick="onLikeClick"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripaleffect"
+                    android:padding="22dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/like" />
+
+                <ImageView
+                    android:id="@+id/all_copy_post"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripaleffect"
+                    android:padding="22dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/copy" />
+
+                <ImageView
+                    android:id="@+id/all_save_post"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripaleffect"
+                    android:padding="22dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/save" />
+
+                <ImageView
+                    android:id="@+id/all_share_post"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:padding="22dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripaleffect"
+                    android:layout_weight="1"
+                    android:src="@drawable/share" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

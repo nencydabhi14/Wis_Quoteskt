@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/oraange">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:src="@drawable/splash" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corner_radius">
+
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="18dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image_logo"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:id="@+id/contain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:backgroundTint="@color/blue"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#3C222D3C" />
+
+                        <RelativeLayout
+                            android:id="@+id/category_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripaleffect">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:id="@+id/category_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/category" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/category_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:text="Category"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contain2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contain1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/quote_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:backgroundTint="@color/blue"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#3C222D3C" />
+
+                        <RelativeLayout
+                            android:id="@+id/quote_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripaleffect">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:id="@+id/quote_im"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginEnd="17dp"
+                                    android:src="@drawable/quote" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/quote_im"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/mediumquis"
+                                    android:text="Quotes"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contain3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contain2"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:backgroundTint="@color/blue"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:id="@+id/settings_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripaleffect">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:id="@+id/settings_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/settings" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/settings_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/mediumquis"
+                                    android:text="Setting"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

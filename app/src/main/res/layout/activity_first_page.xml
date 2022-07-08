@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".first_page">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/startapp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/blastanim" />
+
+<RelativeLayout
+    android:id="@+id/color"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oraange"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/splashe_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/splash_animation" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashe_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/quicksandsemibold"
+            android:text="wisQuotes"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/animation" />
+
+</RelativeLayout>

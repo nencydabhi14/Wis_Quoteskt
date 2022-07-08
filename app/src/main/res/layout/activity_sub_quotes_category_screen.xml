@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".SubQuotes_Category_Screen">
+
+
+    <RelativeLayout
+        android:id="@+id/hed"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/back_quotes"
+            android:layout_width="40dp"
+            android:background="@drawable/ripaleffect"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_quotes_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="3dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/header_quot_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="Alone"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subquote_rcv"
+        android:layout_below="@+id/hed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
