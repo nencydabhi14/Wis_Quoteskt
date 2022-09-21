@@ -21,7 +21,7 @@
 
 🖱️  You can Tap and change background
 
-❤️ Like your favorite Quotes
+❤️ Like your favorite Quotes.!
 
 📑 Downloade the Quotes which you want 
 
